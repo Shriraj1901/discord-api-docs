@@ -817,21 +817,21 @@ await discordSdk.commands.userSettingsGetLocale();
 
 Developers may use the following events alongside the `subscribe()` SDK method to subscribe to events from Discord and supported devices.
 
-| Name                                                                                                                     | Description                                                                               |
-|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [READY](/developers/developer-tools/embedded-app-sdk#ready)                                                              | non-subscription event sent immediately after connecting, contains server information     |
-| [ERROR](/developers/developer-tools/embedded-app-sdk#error)                                                              | non-subscription event sent when there is an error, including command responses           |
-| [VOICE_STATE_UPDATE](/developers/developer-tools/embedded-app-sdk#voicestateupdate)                                      | sent when a user's voice state changes in a subscribed voice channel (mute, volume, etc.) |
-| [SPEAKING_START](/developers/developer-tools/embedded-app-sdk#speakingstart)                                             | sent when a user in a subscribed voice channel speaks                                     |
-| [SPEAKING_STOP](/developers/developer-tools/embedded-app-sdk#speakingstop)                                               | sent when a user in a subscribed voice channel stops speaking                             |
-| [ACTIVITY_LAYOUT_MODE_UPDATE](/developers/developer-tools/embedded-app-sdk#activitylayoutmodeupdate)                     | Received when a user changes the layout mode in the Discord client                        |
-| [ORIENTATION_UPDATE](/developers/developer-tools/embedded-app-sdk#orientationupdate)                                     | Received when screen orientation changes                                                  |
-| [CURRENT_USER_UPDATE](/developers/developer-tools/embedded-app-sdk#currentuserupdate)                                    | Received when the current user object changes                                             |
-| [CURRENT_GUILD_MEMBER_UPDATE](/developers/developer-tools/embedded-app-sdk#currentguildmemberupdate)                     | Received when the current guild member object changes                                     |
-| [THERMAL_STATE_UPDATE](/developers/developer-tools/embedded-app-sdk#thermalstateupdate)                                  | Received when Android or iOS thermal states are surfaced to the Discord app               |
-| [ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE](/developers/developer-tools/embedded-app-sdk#activityinstanceparticipantsupdate) | Received when the number of instance participants changes                                 |
-| [RELATIONSHIP_UPDATE](/developers/developer-tools/embedded-app-sdk#relationshipupdate)                                   | Received when a relationship of the current user is updated                               |
-| [ENTITLEMENT_CREATE](/developers/developer-tools/embedded-app-sdk#entitlementcreate)                                     | Received when an entitlement is created for a SKU                                         |
+| Name                                                                                                                        | Description                                                                               |
+|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| [READY](/developers/developer-tools/embedded-app-sdk#ready)                                                                 | non-subscription event sent immediately after connecting, contains server information     |
+| [ERROR](/developers/developer-tools/embedded-app-sdk#error)                                                                 | non-subscription event sent when there is an error, including command responses           |
+| [VOICE_STATE_UPDATE](/developers/developer-tools/embedded-app-sdk#voice_state_update)                                       | sent when a user's voice state changes in a subscribed voice channel (mute, volume, etc.) |
+| [SPEAKING_START](/developers/developer-tools/embedded-app-sdk#speaking_start)                                               | sent when a user in a subscribed voice channel speaks                                     |
+| [SPEAKING_STOP](/developers/developer-tools/embedded-app-sdk#speaking_stop)                                                 | sent when a user in a subscribed voice channel stops speaking                             |
+| [ACTIVITY_LAYOUT_MODE_UPDATE](/developers/developer-tools/embedded-app-sdk#activity_layout_mode_update)                     | Received when a user changes the layout mode in the Discord client                        |
+| [ORIENTATION_UPDATE](/developers/developer-tools/embedded-app-sdk#orientation_update)                                       | Received when screen orientation changes                                                  |
+| [CURRENT_USER_UPDATE](/developers/developer-tools/embedded-app-sdk#current_user_update)                                     | Received when the current user object changes                                             |
+| [CURRENT_GUILD_MEMBER_UPDATE](/developers/developer-tools/embedded-app-sdk#current_guild_member_update)                     | Received when the current guild member object changes                                     |
+| [THERMAL_STATE_UPDATE](/developers/developer-tools/embedded-app-sdk#thermal_state_update)                                   | Received when Android or iOS thermal states are surfaced to the Discord app               |
+| [ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE](/developers/developer-tools/embedded-app-sdk#activity_instance_participants_update) | Received when the number of instance participants changes                                 |
+| [RELATIONSHIP_UPDATE](/developers/developer-tools/embedded-app-sdk#relationship_update)                                     | Received when a relationship of the current user is updated                               |
+| [ENTITLEMENT_CREATE](/developers/developer-tools/embedded-app-sdk#entitlement_create)                                       | Received when an entitlement is created for a SKU                                         |
 
 
 ### READY
